@@ -1,10 +1,17 @@
 
 {% extends 'layout.html' %}
 {%block content%}
-
 {%load static %}
 
-<section>
+{% include 'about.html' %}
+{% include 'works.html' %}
+{% include 'contact.html' %}
+
+{%endblock%}
+
+
+
+{% comment %} <section>
    <div class="container_title_about">
     <h2 id="about" >About</h2>
   </div>
@@ -18,17 +25,20 @@
     </div>
 
   </article>
-</section>
+</section>  {% endcomment %}
 
-
+{% comment %} 
 
   <h2 id="works" class='title_works'>Works</h2>
-
+  </div>
 <main class="container row d-flex justify-content-around  section__works ">
   {% for project in projects %}
   <div class="card mb-5 col-sm-12 col-md-6 col-lg-4 tienda-card card_container p-0" style="width: 18rem;" id="first">
-    <a href="{{project.url}}" target="__blank" rel="noreferrer">
-    <img src="{{project.image.url }}" class="card-img-top " alt="{{ project.title }}">
+    <a href="{{project.url}}" target="__blank" rel="noreferrer"> 
+     
+<div class="container-imgs ">
+      <img src="{{project.image.url}}" class="card-img-top img_work_visible" alt="{{ project.title }}"> 
+</div>
   <div class="card-body ">
     <h5 class="card-title">{{ project.title }}</h5>
     <p class="card-text">{{ project.description }}</p>
@@ -37,10 +47,10 @@
  </div>
 </a> 
 {% endfor %}    
-</main>
+</main> {% endcomment %}
 
 
-
+{% comment %} 
 <h2 id="contact" class='title_contact'>Contact</h2>
 
 <section class="container__logos__contacto card w-100">
@@ -62,9 +72,7 @@
 <footer class="container_footer ">
   <div class="d-flex justify-content-end container_p_footer">
  <p clas="col p_footer">  © <i>2022</i> 🌮🌮🌮</p>
- <!-- 🍜🪂 hecho con ❤-->
 </div>
-</footer>
-{%endblock%}
+</footer> {% endcomment %}
 
 

@@ -6,4 +6,19 @@ def home(request):
     return render(request,'home.html',{
         'projects': projects
     })
-   
+
+def about(request):
+    return render(request,'about.html',{
+        'navbar':'about'
+    } )
+    
+def works(request):
+    return render(request,'about.html',{
+        'navbar':'works'
+    } )    
+        
+    
+def contact(request):
+    return render(request,'contact.html',{
+        'navbar':'contact'
+    } )        

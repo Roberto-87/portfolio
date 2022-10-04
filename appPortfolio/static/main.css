@@ -1,4 +1,8 @@
 /*----------------- body---------- */
+html {
+    scroll-behavior: smooth;
+  }
+
 *{
     text-decoration: none !important;
 }
@@ -23,8 +27,11 @@ body{
     top: 0 !important;
     z-index: 2;
     font-family: 'Poiret One', cursive;
+    display: inline-block;
   
 }
+
+
 
 .nav-link, .navbar-brand{
     color: rgb(200, 190, 190) !important;
@@ -45,6 +52,7 @@ transform: scale(1.02);
 transition: 1.5s;
 }
 
+
 .navbar-brand{
     font-family: 'Poiret One', cursive;
 }
@@ -54,14 +62,29 @@ transition: 1.5s;
 }
 /*----------------- end navbar---------- */
 
+/* .first_screen{
+    width: 100vw;
+    height: 100vh;
+} */
 
+.second_screen{
+    width: 100vw;
+    height: 70vh;
+  
+}
 
 /*----------------- about---------- */
+
 .about__image{
     border: 1px solid transparent;
     border-radius:50%;
     width: 20%;
-   background-blend-mode: darken;
+
+}
+
+.about__image:hover{
+    filter:contrast(1.5);
+    transition:2s
 }
 
 .container_img_about{
@@ -114,14 +137,13 @@ transition: 1.5s;
 }
 
 
+
 /* .card_row_works{
     display: flex !important;
     justify-content: space-around !important;
     width: 100%;
     width: ;
 }
-
-
 
 
 /*-----------------end works---------- */
@@ -160,7 +182,12 @@ padding:0.8%
 .container__logos__contacto{
         background-color: black;
         padding-bottom: 2%;
-    
+         
+}
+
+.title_contact{
+    padding-bottom: 15%;
+    padding-top:-1% ;
 }
 
 
