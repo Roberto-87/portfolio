@@ -5,36 +5,36 @@ html {
 
 *{
     text-decoration: none !important;
+    
 }
 body{
     /* background-color: rgba(192, 155, 204, 0.085);  */
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.800), rgb(0, 0, 0)), url('./images/19.jpg');
     background-repeat: repeat;
-    color:white
-
-}
+    color:white;
+ }
 /*----------------- end body---------- */
 
 
 
 /*----------------- navbar---------- */
-.navbar{
-    /* background-color: rgb(15, 0, 30); */
-    /* background-color: #e2f3f4; */
+ .navbar{
+
     background-color: black;
     position:sticky !important;
-    top: 0 !important;
+    top:-1px !important;
     z-index: 2;
     font-family: 'Poiret One', cursive;
-    display: inline-block;
-  
-}
+ 
 
+} 
 
 
 .nav-link, .navbar-brand{
     color: rgb(200, 190, 190) !important;
+    
+    
 
 }
 
@@ -45,11 +45,11 @@ body{
 
 .nav-link:hover, .navbar-brand:hover{
     color: rgb(235, 229, 229) !important;
-  
 }
 .nav-link:active{
 transform: scale(1.02);
 transition: 1.5s;
+
 }
 
 
@@ -57,9 +57,10 @@ transition: 1.5s;
     font-family: 'Poiret One', cursive;
 }
 
-.nav_item_contact{
+
+/* .nav_item_contact{
     padding-bottom:5% ;
-}
+} */
 /*----------------- end navbar---------- */
 
 /* .first_screen{
@@ -67,11 +68,11 @@ transition: 1.5s;
     height: 100vh;
 } */
 
-.second_screen{
-    width: 100vw;
-    height: 70vh;
+ .second_screen{
+    
+    height: 90vh;
   
-}
+} 
 
 /*----------------- about---------- */
 
@@ -104,15 +105,15 @@ transition: 1.5s;
     padding-top: 2%;
 }
 
+
+/*----------------- end about---------- */
+
+/*----------------- works---------- */
 .title_works{
     display: flex;
     justify-content: center;
     padding-top: 2%;
 }
-
-/*----------------- end about---------- */
-
-/*----------------- works---------- */
 .card_container{
     background-color: rgba(180, 179, 176, 0.266) !important;
     margin: 2px;
@@ -136,8 +137,6 @@ transition: 1.5s;
     margin: 5% !important;
 }
 
-
-
 /* .card_row_works{
     display: flex !important;
     justify-content: space-around !important;
@@ -155,9 +154,6 @@ transition: 1.5s;
 .container_logo_mail, .container_logo_git, .container_logo_ld{
    width: 5%; 
    border: 2px solid rgba(177, 111, 148, 0.200); 
-   /* background-color: rgba(177, 111, 148, 0.378); */
-   /* background-color: rgba(190, 33, 130, 0.553); */
-   /* background-color: rgba(255, 0, 195, 0.73); */
    background-image: linear-gradient(rgba(0, 0, 0, 0.150), rgb(0, 0, 36)),url('./images/53.jpg');
    border-radius: 50%;
    color:white;
@@ -223,5 +219,28 @@ padding:0.8%
        width: 5%; 
     }
   }
+
+
+/*
+  @media (min-width: 412px) {
+    .navbar {
+        position:sticky !important;
+        top:-1 px !important;
+        padding-top: 45px;
+    
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar {
+        /* position:sticky !important; 
+        top:-1 px !important;
+        padding:0;
+        margin:0;
+
+    }
+  } 
+
+  --bs-navbar-toggler-icon-bg */
 
 
