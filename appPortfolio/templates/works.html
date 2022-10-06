@@ -11,7 +11,10 @@
    
 <div class="container-imgs" >
     <img src="{{project.image.url}}" class="card-img-top img_work_visible" alt="{{ project.title }}"> 
-</div>
+      <div class="container_imghover ">
+        <img src="{{project.image_onmouseover.url}}" class="card-img-top img_work_hover" alt="{{ project.title }}"> 
+      </div>  
+  </div>
 <div class="card-body ">
   <h5 class="card-title">{{ project.title }}</h5>
   <p class="card-text">{{ project.description }}</p>

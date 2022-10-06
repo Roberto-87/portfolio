@@ -7,18 +7,18 @@ def home(request):
         'projects': projects
     })
 
-def about(request):
-    return render(request,'about.html',{
-        'navbar':'about'
-    } )
+# def about(request):
+#     return render(request,'about.html',{
+#         'navbar':'about'
+#     } )
     
-def works(request):
-    return render(request,'about.html',{
-        'navbar':'works'
-    } )    
+# def works(request):
+#     return render(request,'about.html',{
+#         'navbar':'works'
+#     } )    
         
     
-def contact(request):
-    return render(request,'contact.html',{
-        'navbar':'contact'
-    } )        
+# def contact(request):
+#     return render(request,'contact.html',{
+#         'navbar':'contact'
+#     } )        
