@@ -129,9 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     # and creating unique names for each version so they can safely be cached forever.
 STATIC_URL = 'static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_DIRS = (
-os.path.join(BASE_DIR, 'static'),
-)
+
 MEDIA_ROOT= BASE_DIR / 'media'
 
 MEDIA_URL='/public/'
