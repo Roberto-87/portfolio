@@ -7,4 +7,8 @@ class Project(models.Model):
     image= models.ImageField(upload_to='portfolio/images/')
     image_onmouseover= models.ImageField(upload_to='portfolio/images/', default='portfolio/images/')
     url= models.URLField(blank= True)
+    
+    def __str__(self):
+        return self.title
+    
  

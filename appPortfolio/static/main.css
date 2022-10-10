@@ -160,6 +160,7 @@ transition: 1.5s;
 /*----------------- contact---------- */
 .container_contact{
     height: 85vh;
+    width: 100vw!important;
 }
 
 .container_logo_mail, .container_logo_git, .container_logo_ld{
@@ -188,9 +189,9 @@ padding:0.8%
 }
 
 .container__logos__contacto{
-        background-color: black;
+        background-color: transparent !important;
         padding-bottom: 2%;
-         
+              
 }
 
 .title_contact{
@@ -204,6 +205,7 @@ padding:0.8%
 .container_footer{
     padding: 1%;
     background-color: rgba(17, 16, 18, 0.553); 
+    width: 102vw !important;
 
 }
 .container_p_footer{
